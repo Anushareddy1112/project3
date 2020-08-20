@@ -1,0 +1,12 @@
+dict1={}
+def most_frequent(name):
+    for i in name:
+        frequency=name.count(i)
+        dict1[i]=frequency
+
+    a = sorted(dict1.items(),reverse=True, key=lambda x: x[1])
+    for (k,v) in a:
+        print(k,"=",v)
+name=input("please input a string:")
+most_frequent(name)        
+        
